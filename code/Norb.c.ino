@@ -122,11 +122,11 @@ void HandleTick(){
 	} else if(pattern_mode == PATTERN_PARTICLES){
 		HandlePatternParticles();
 	} else if(pattern_mode == PATTERN_RED){
-		HandlePatternRed();
+		HandlePatternColour(RED);
 	} else if(pattern_mode == PATTERN_YELLOW){
-		HandlePatternYellow();
+		HandlePatternColour(YELLOW);
 	} else if(pattern_mode == PATTERN_GREEN){
-		HandlePatternGreen();
+		HandlePatternColour(GREEN);
 	} else if(pattern_mode == PATTERN_RANDOM){
 		HandlePatternRandom();
 	} else if(pattern_mode == PATTERN_INVERT){
@@ -148,7 +148,7 @@ void HandlePatternForward(){
 			leds[next_led].ToggleOn();
 			
 			// Break loop.
-			i = MAX_LEDS;
+			break;
 		}
 	}
 }
@@ -167,7 +167,7 @@ void HandlePatternBackward(){
 			leds[next_led].ToggleOn();
 			
 			// Break loop.
-			i = -1;
+			break;
 		}
 	}
 }
@@ -194,40 +194,14 @@ void HandlePatternParticles(){
 	leds[partic_2].ToggleOn();
 }
 
-void HandlePatternRed(){
+void HandlePatternColour(int colour){
 	// Go trough each LED object.
 	for(int i = 0; i < MAX_LEDS; i++){
-		if(leds[i].colour == RED){
-			// All red LED lights get toggled (their on/off mode is inverted).
+		if(leds[i].colour == colour){
+			// All LED lights of the specified colour are toggled.
 			leds[i].Toggle();
 		} else {
-			// All non-red LED lights get turned off.
-			leds[i].ToggleOff();
-		}
-	}
-}
-
-void HandlePatternYellow(){
-	// Go trough each LED object.
-	for(int i = 0; i < MAX_LEDS; i++){
-		if(leds[i].colour == YELLOW){
-			// All yellow LED lights get toggled (their on/off mode is inverted).
-			leds[i].Toggle();
-		} else {
-			// All non-yellow LED lights get turned off.
-			leds[i].ToggleOff();
-		}
-	}
-}
-
-void HandlePatternGreen(){
-	// Go trough each LED object.
-	for(int i = 0; i < MAX_LEDS; i++){
-		if(leds[i].colour == GREEN){
-			// All green LED lights get toggled (their on/off mode is inverted).
-			leds[i].Toggle();
-		} else {
-			// All non-green LED lights get turned off.
+			// All LED lights of a different colour are turned off.
 			leds[i].ToggleOff();
 		}
 	}

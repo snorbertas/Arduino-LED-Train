@@ -47,8 +47,6 @@ void HandleTick();						// Handles timer tick
 void HandlePatternForward();
 void HandlePatternBackward();
 void HandlePatternParticles();
-void HandlePatternRed();
-void HandlePatternYellow();
-void HandlePatternGreen();
+void HandlePatternColour(int colour);
 void HandlePatternRandom();
 void HandlePatternInvert();
