@@ -13,5 +13,5 @@ The physical components used:
   
 If you want to attempt to rebuild it yourself. The default pins used in my code are as follows:
   - Analog #1: Sensor INPUT
-  - Digital #3: button INPUT
+  - Digital #3: Button INPUT
   - Digital #4 to #13: LED OUTPUT
