@@ -15,4 +15,4 @@ If you want to attempt to rebuild it yourself. The default pins used in my code 
   - Digital #3: Button INPUT
   - Digital #4 to #13: LED OUTPUT
 
-#Big thanks to Andrew and his genius son who supplied me with the components to play around with :)
+Big thanks to Andrew and his genius son who supplied me with the components to play around with :)
