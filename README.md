@@ -1,7 +1,6 @@
 # Arduino LED Train
 
 This is my first Arduino project using C++. The code programs the board to create various patterns using 10 LED (or whatever desired amount) lights. Here's a video demonstrating it: https://www.youtube.com/watch?v=8az_PUpH-Qc
-\nBig thanks to Andrew and his genius son who supplied me with the components to play around with :)
 
 The physical components used:
   - Arduino UNO board
@@ -15,3 +14,5 @@ If you want to attempt to rebuild it yourself. The default pins used in my code 
   - Analog #1: Sensor INPUT
   - Digital #3: Button INPUT
   - Digital #4 to #13: LED OUTPUT
+
+#Big thanks to Andrew and his genius son who supplied me with the components to play around with :)
