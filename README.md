@@ -12,6 +12,6 @@ The physical components used:
   - 17 wires
   
 If you want to attempt to rebuild it yourself. The default pins are as follows:
-Digital 3: button INPUT
-Digital 4 - 13: LED OUTPUT
-Analog 1: Sensor INPUT
+  - Digital #3: button INPUT
+  - Digital #4 to #13: LED OUTPUT
+  - Analog #1: Sensor INPUT
