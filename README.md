@@ -7,7 +7,7 @@ The physical components used:
   - 10 LED lights
   - 11 resistors (x10 220 ohm, x1 10 ohm)
   - 1 Button
-  - 1 Analog sensor
+  - 1 Analog potentiometer
   - 17 wires
   
 If you want to attempt to rebuild it yourself. The default pins used in my code are as follows:
